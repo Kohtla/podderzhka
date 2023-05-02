@@ -10,6 +10,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - name: Configure Git
+        run: |
+          git config --global user.name "${GITHUB_ACTOR}"
+          git config --global user.email "MKmoolooo@yandex.ru"
       - name: Delete existing gh-pages branch
         run: git branch -D gh-pages || true
 
