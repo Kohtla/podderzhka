@@ -33,7 +33,7 @@ jobs:
         run: npm run build
 
       - name: Commit built files
-        run: git --work-tree dist add --all && git --work-tree dist commit -m "Deploy to GitHub Pages"
+        run: git --work-tree dist add --all && git --work-tree dist commit -m "Deploy ${GITHUB_SHA}"
 
       - name: Push to GitHub Pages
         uses: ad-m/github-push-action@master
