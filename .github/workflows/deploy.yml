@@ -14,6 +14,7 @@ jobs:
         run: |
           git config --global user.name "${GITHUB_ACTOR}"
           git config --global user.email "MKmoolooo@yandex.ru"
+      
       - name: Delete existing gh-pages branch
         run: git branch -D gh-pages || true
 
@@ -32,7 +33,7 @@ jobs:
         run: npm run build
 
       - name: Commit built files
-        run: git add -f dist && git commit -m "Deploy to GitHub Pages"
+        run: git --work-tree dist add --all && git --work-tree dist commit -m "Deploy to GitHub Pages"
 
       - name: Push to GitHub Pages
         uses: ad-m/github-push-action@master
