@@ -1,0 +1,5 @@
+<template>
+  <main>
+    <h1>Press</h1>
+  </main>
+</template>
