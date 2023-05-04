@@ -5,7 +5,34 @@ module.exports = {
     './src/**/*.{vue,js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'blue': '#8698D9',
+        'press-blue': '#93A5E4',
+        'light-blue': '#D5DEFE',
+        'white': '#F3F5FF',
+        
+        // gradient colors
+        'g-blue': '#BDE4FF',
+        'g-violet': '#AEA1F0',
+        'g-purple': '#B484D9',
+        'g-pink': '#F596FA',
+      },
+      fontFamily: {
+        'sans': ['Inter', 'sans-serif'],
+        'inter': ['Inter', 'sans-serif'],
+      },
+      fontWeight: {
+        'thin': 100,
+        'extralight': 200,
+        'light': 300,
+        'normal': 400,
+        'medium': 500,
+        'semibold': 600,
+        'bold': 700,
+        'black': 900,
+      },
+    },
   },
   plugins: [],
 }
