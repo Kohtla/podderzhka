@@ -1,65 +1,14 @@
-name: build and push to gh-pages
+name: deploy gh-pages via ssh
 
 on:
   push:
     branches:
-      - main
+      - gh-pages
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v2
-      - name: Configure Git
-        run: |
-          git config --global user.name "${GITHUB_ACTOR}"
-          git config --global user.email "MKmoolooo@yandex.ru"
-
-      - name: Delete existing gh-pages branch
-        run: git branch -D gh-pages || true
-
-      - name: Create gh-pages branch
-        run: git checkout --orphan gh-pages
-
-      - name: Setup Node.js environment
-        uses: actions/setup-node@v1
-        with:
-          node-version: 14.x
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Build
-        run: npm run build
-
-      - name: Commit built files
-        run: git --work-tree dist add --all && git --work-tree dist commit -m "Deploy ${GITHUB_SHA}"
-
-      - name: Push to GitHub Pages
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: gh-pages
-          force: true
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v3
-
-      - name: Upload static files as an artifact
-        uses: actions/upload-artifact@v2
-        with:
-          name: pages
-          path: ./
-
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          personal_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: gh-pages
-          publish_dir: ./
-          cname: podderzhka.co
+      - name: Say Hello World
+        run: echo "Hello world!"
