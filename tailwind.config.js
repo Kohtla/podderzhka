@@ -11,6 +11,10 @@ module.exports = {
         'press-blue': '#93A5E4',
         'light-blue': '#D5DEFE',
         'white': '#F3F5FF',
+        'yellow': '#E6C877',
+        'press-yellow': '#F2D37E',
+        'pink': '#D99CAB',
+        'press-pink': '#E6A5B5',
         
         // gradient colors
         'g-blue': '#BDE4FF',
