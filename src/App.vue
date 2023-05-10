@@ -3,7 +3,7 @@ import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 <template>
-  <main class="h-screen bg-gradient-to-br from-g-blue via-g-violet via-g-purple to-g-pink">
+  <main class="min-h-screen h-full overflow-auto bg-gradient-to-br from-g-blue via-g-violet via-g-purple to-g-pink">
     <header>
       <nav class="flex items-center justify-between bg-blue py-8 px-8">
         <RouterLink to="/" class="font-inter font-black text-white text-2xl">Podderzhka</RouterLink>
