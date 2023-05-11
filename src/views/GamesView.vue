@@ -1,6 +1,6 @@
 <template>
   <main>
-    <div class="flex mx-10 my-10">
+    <div class="flex flex-col md:flex-row mx-10 my-10">
 
       <div class="flex-1 py-2 px-2 my-2 mx-2">
         <h1 class="font-inter font-black text-white text-8xl">JUST DATE</h1>
@@ -19,7 +19,6 @@
           </div>
         </div>
       </div>
-
     </div>
   </main>
 </template>
