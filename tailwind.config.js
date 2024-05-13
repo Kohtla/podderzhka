@@ -7,24 +7,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'blue': '#8698D9',
-        'press-blue': '#93A5E4',
-        'light-blue': '#D5DEFE',
-        'white': '#F3F5FF',
-        'yellow': '#E6C877',
-        'press-yellow': '#F2D37E',
-        'pink': '#D99CAB',
-        'press-pink': '#E6A5B5',
-        
-        // gradient colors
-        'g-blue': '#BDE4FF',
-        'g-violet': '#AEA1F0',
-        'g-purple': '#B484D9',
-        'g-pink': '#F596FA',
+        'beige':'#FCF4DD',
+        'red': '#B1143A',
+        'green': '#73B48C',
       },
       fontFamily: {
-        'sans': ['Inter', 'sans-serif'],
-        'inter': ['Inter', 'sans-serif'],
+        mplus: ["'M PLUS Rounded 1c'"],
       },
       fontWeight: {
         'thin': 100,
