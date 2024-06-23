@@ -10,6 +10,9 @@ module.exports = {
         'beige':'#FCF4DD',
         'red': '#B1143A',
         'green': '#73B48C',
+        'white': '#FBF5F1',
+        'soft-red': '#FF6C6C',
+        'blue': '#6BC6FF',
       },
       fontFamily: {
         mplus: ["'M PLUS Rounded 1c'"],
