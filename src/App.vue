@@ -55,7 +55,7 @@ const games = computed(() => [
   {
     id: 1,
     title: 'Just Date: Vegan',
-    steam: '#',
+    steam: 'https://store.steampowered.com/app/3032190/Just_Date_Vegan/',
     link_text: currentTranslations.value?.[2] || '',
     description: currentTranslations.value?.[3] || '',
     release_date: currentTranslations.value?.[4] || ''
