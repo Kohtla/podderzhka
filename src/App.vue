@@ -47,15 +47,16 @@ const { currentLanguage, currentTranslations } = useLanguage();
 
 const links = ref([
   { id: 1, url: 'https://twitter.com/podderzhka_comp', title: 'twitter' },
-  { id: 2, url: 'https://www.patreon.com/Podderzhka', title: 'patreon' },
-  { id: 3, url: 'https://discord.com/invite/Fb9aeDDyrQ', title: 'discord', last: true }
+  { id: 2, url: 'https://bsky.app/profile/justdate.bsky.social', title: 'bluesky' },
+  { id: 3, url: 'https://www.patreon.com/Podderzhka', title: 'patreon' },
+  { id: 4, url: 'https://discord.com/invite/Fb9aeDDyrQ', title: 'discord', last: true }
 ]);
 
 const games = computed(() => [
   {
     id: 1,
     title: 'Just Date: Vegan',
-    steam: 'https://store.steampowered.com/app/3032190/Just_Date_Vegan/',
+    steam: 'https://store.steampowered.com/app/3032190/Just_Date_Vegan/?utm_source=podderzhka_website',
     link_text: currentTranslations.value?.[2] || '',
     description: currentTranslations.value?.[3] || '',
     release_date: currentTranslations.value?.[4] || ''
@@ -63,7 +64,7 @@ const games = computed(() => [
   {
     id: 2,
     title: 'Just Date',
-    steam: 'https://store.steampowered.com/app/2417100/Just_Date/',
+    steam: 'https://store.steampowered.com/app/2417100/Just_Date/?utm_source=podderzhka_website',
     link_text: currentTranslations.value?.[5] || '',
     description: currentTranslations.value?.[6] || '',
     release_date: currentTranslations.value?.[7] || ''
