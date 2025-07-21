@@ -46,9 +46,9 @@ import { useLanguage } from '@/composables/useLanguage';
 const { currentLanguage, currentTranslations } = useLanguage();
 
 const links = ref([
-  { id: 1, url: 'https://twitter.com/podderzhka_comp', title: 'twitter' },
+  { id: 1, url: 'https://x.com/JustDateGameSFW', title: 'twitter' },
   { id: 2, url: 'https://bsky.app/profile/justdate.bsky.social', title: 'bluesky' },
-  { id: 3, url: 'https://www.patreon.com/Podderzhka', title: 'patreon' },
+  { id: 3, url: 'https://patreon.com/JustDate?utm_source=website', title: 'patreon' },
   { id: 4, url: 'https://discord.com/invite/Fb9aeDDyrQ', title: 'discord', last: true }
 ]);
 
