@@ -56,13 +56,21 @@ const games = computed(() => [
   {
     id: 1,
     title: 'Just Date: Vegan',
+    steam: 'https://store.steampowered.com/app/3823730/Just_Date_Goth/?utm_source=podderzhka_website',
+    link_text: currentTranslations.value?.[8] || '',
+    description: currentTranslations.value?.[9] || '',
+    release_date: currentTranslations.value?.[10] || ''
+  },
+  {
+    id: 2,
+    title: 'Just Date: Vegan',
     steam: 'https://store.steampowered.com/app/3032190/Just_Date_Vegan/?utm_source=podderzhka_website',
     link_text: currentTranslations.value?.[2] || '',
     description: currentTranslations.value?.[3] || '',
     release_date: currentTranslations.value?.[4] || ''
   },
   {
-    id: 2,
+    id: 3,
     title: 'Just Date',
     steam: 'https://store.steampowered.com/app/2417100/Just_Date/?utm_source=podderzhka_website',
     link_text: currentTranslations.value?.[5] || '',
