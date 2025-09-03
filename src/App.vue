@@ -55,7 +55,7 @@ const links = ref([
 const games = computed(() => [
   {
     id: 1,
-    title: 'Just Date: Vegan',
+    title: 'Just Date: Goth',
     steam: 'https://store.steampowered.com/app/3823730/Just_Date_Goth/?utm_source=podderzhka_website',
     link_text: currentTranslations.value?.[8] || '',
     description: currentTranslations.value?.[9] || '',
